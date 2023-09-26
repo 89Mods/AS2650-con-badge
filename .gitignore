@@ -4,3 +4,5 @@ CPLD/incremental_db/
 *.bin
 *.class
 *.txt
+Software/obj/
+Software/bin/
