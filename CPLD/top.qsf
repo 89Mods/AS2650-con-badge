@@ -1,0 +1,135 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+# Date created = 17:04:29  June 30, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:04:29  JUNE 30, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_location_assignment PIN_5 -to opreq
+set_location_assignment PIN_4 -to rw
+set_location_assignment PIN_6 -to wrp
+set_location_assignment PIN_12 -to clk
+set_location_assignment PIN_15 -to dbus[7]
+set_location_assignment PIN_16 -to dbus[6]
+set_location_assignment PIN_17 -to dbus[5]
+set_location_assignment PIN_18 -to dbus[4]
+set_location_assignment PIN_19 -to dbus[3]
+set_location_assignment PIN_20 -to dbus[2]
+set_location_assignment PIN_21 -to dbus[1]
+set_location_assignment PIN_26 -to dbus[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to A12
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DISP_addr[1]
+set_location_assignment PIN_3 -to A12
+set_location_assignment PIN_100 -to A13
+set_location_assignment PIN_99 -to A14
+set_location_assignment PIN_86 -to DISP_addr[0]
+set_location_assignment PIN_87 -to DISP_addr[1]
+set_location_assignment PIN_88 -to DISP_addr[2]
+set_location_assignment PIN_89 -to DISP_addr[3]
+set_location_assignment PIN_73 -to DISP_clk
+set_location_assignment PIN_74 -to DISP_oeb
+set_location_assignment PIN_72 -to DISP_stb
+set_location_assignment PIN_29 -to NES_clk
+set_location_assignment PIN_33 -to NES_data
+set_location_assignment PIN_91 -to RAM_oeb
+set_location_assignment PIN_90 -to RAM_ceb
+set_location_assignment PIN_92 -to RAM_web
+set_location_assignment PIN_27 -to sense
+set_location_assignment PIN_7 -to m_io
+set_location_assignment PIN_36 -to lvl_shift_enb
+set_location_assignment PIN_2 -to cpld_rst
+set_location_assignment PIN_8 -to d_c
+set_location_assignment PIN_35 -to bus_dir
+set_location_assignment PIN_70 -to VRAM_web
+set_location_assignment PIN_69 -to VRAM_oeb
+set_location_assignment PIN_84 -to VRAM_data[7]
+set_location_assignment PIN_83 -to VRAM_data[6]
+set_location_assignment PIN_82 -to VRAM_data[5]
+set_location_assignment PIN_81 -to VRAM_data[4]
+set_location_assignment PIN_78 -to VRAM_data[3]
+set_location_assignment PIN_77 -to VRAM_data[2]
+set_location_assignment PIN_76 -to VRAM_data[1]
+set_location_assignment PIN_75 -to VRAM_data[0]
+set_location_assignment PIN_68 -to VRAM_addr[14]
+set_location_assignment PIN_67 -to VRAM_addr[13]
+set_location_assignment PIN_66 -to VRAM_addr[12]
+set_location_assignment PIN_44 -to POR
+set_location_assignment PIN_30 -to NES_latch
+set_location_assignment PIN_39 -to SPI_csb
+set_location_assignment PIN_41 -to SPI_sck
+set_location_assignment PIN_40 -to SPI_si
+set_location_assignment PIN_42 -to SPI_so
+set_location_assignment PIN_61 -to VRAM_addr[11]
+set_location_assignment PIN_58 -to VRAM_addr[10]
+set_location_assignment PIN_57 -to VRAM_addr[9]
+set_location_assignment PIN_56 -to VRAM_addr[8]
+set_location_assignment PIN_55 -to VRAM_addr[7]
+set_location_assignment PIN_54 -to VRAM_addr[6]
+set_location_assignment PIN_53 -to VRAM_addr[5]
+set_location_assignment PIN_52 -to VRAM_addr[4]
+set_location_assignment PIN_51 -to VRAM_addr[3]
+set_location_assignment PIN_48 -to VRAM_addr[2]
+set_location_assignment PIN_49 -to VRAM_addr[1]
+set_location_assignment PIN_50 -to VRAM_addr[0]
+set_location_assignment PIN_1 -to LED
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_ceb
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RAM_oeb
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RAM_web
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A13
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A14
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dbus
+set_global_assignment -name SDC_FILE top.out.sdc
+set_global_assignment -name VERILOG_FILE top.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"

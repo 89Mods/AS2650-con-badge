@@ -1,0 +1,6 @@
+CPLD/db/
+CPLD/incremental_db/
+*.bak
+*.bin
+*.class
+*.txt
